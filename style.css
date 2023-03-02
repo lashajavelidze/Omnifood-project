@@ -1,0 +1,724 @@
+/************************************************/
+/* HEADER & NAV SECTION */
+/************************************************/
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 4.8rem;
+
+  position: relative;
+}
+
+.main-nav-links {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.omnifood-logo {
+  height: 2.2rem;
+}
+
+.main-nav-link--btn:link,
+.main-nav-link--btn:visited {
+  background-color: #e67e22;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+}
+
+.main-nav-link--btn:hover,
+.main-nav-link--btn:active {
+  background-color: #cf711f;
+}
+
+/************************************************/
+/* HEADER & NAV SECTION */
+/************************************************/
+
+/************************************************/
+/* HERO SECTION */
+/************************************************/
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero-img {
+  width: 100%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  gap: 6.8rem;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+
+.hero-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 5.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 5.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #e67e22;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: inline;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf711f;
+}
+
+.delivered-imgs {
+  display: inline-flex;
+}
+
+.delivered-imgs img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-meals {
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.delivered-text span {
+  color: #e67e22;
+  font-weight: 700;
+}
+/************************************************/
+/* HERO SECTION */
+/************************************************/
+
+/************************************************/
+/* FEATURED SECTION */
+/************************************************/
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+  /* margin-top: 4.8rem; */
+  margin-bottom: 9.8rem;
+}
+
+/************************************************/
+/* FEATURED SECTION */
+/************************************************/
+
+/************************************************/
+/* HOW IT WORKS  SECTION */
+/************************************************/
+
+.step-gird {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.step-img-box::after,
+.step-img-box::before {
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fae5d3;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-img-box::before {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fdf2e9;
+
+  z-index: -1;
+}
+
+.step-number {
+  font-size: 9.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/************************************************/
+/* FIGURE MEAL SECTION */
+/************************************************/
+
+.meal-img {
+  width: 100%;
+  margin-bottom: -2rem;
+  border-radius: 9px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tag {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2.2rem;
+  display: inline-block;
+}
+
+.tag--vegetarian {
+  background-color: #69db7c;
+  border: 1px solid #69db7c;
+}
+
+.tag--vegan {
+  background-color: #12b886;
+  border: 1px solid #12b886;
+}
+.tag--paleo {
+  background-color: #fcc419;
+  border: 1px solid #fcc419;
+}
+
+.meal-title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+}
+
+.meal-atribute {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+.meal-icon {
+  color: #cf711f;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+.meal-atribute {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.meal-atribute li {
+  display: flex;
+  align-items: center;
+}
+
+.diet {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+.diet-title {
+  font-size: 2.2rem;
+  margin-bottom: 3.2rem;
+}
+.diet-lists {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.diet-saction {
+  margin: 10rem 0;
+}
+
+.meal-figure {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.211);
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+
+.meal-figure:hover {
+  transform: translateY(-2rem);
+}
+
+.shadow-box {
+  padding: 3rem 2rem;
+}
+
+.recepies {
+  text-align: center;
+  margin-top: 3.2rem;
+}
+
+.recepie:link,
+.recepie:visited {
+  display: inline;
+  text-align: center;
+  color: #cf711f;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid currentColor;
+}
+.recepie:hover,
+.recepie:active {
+  border-bottom: 1px solid transparent;
+}
+
+/************************************************/
+/* TESTEMONIAL SECTION */
+/************************************************/
+
+.testemonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 7.4rem;
+}
+
+.section-testemonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fae5d3;
+  padding: 9.6rem 0;
+}
+
+.testemonials-container {
+  padding: 5.2rem 6.2rem;
+}
+
+.testemonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testemonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testemonial-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1.6rem;
+  gap: 1.6rem;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/************************************************/
+/* PRICING SECTION */
+/************************************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+.section-pirce {
+  column-gap: normal;
+}
+.starter {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 3.5rem;
+  color: #e67e22;
+  text-transform: uppercase;
+}
+.starter-price {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: #444;
+}
+.starter-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #444;
+}
+.starter-text {
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem;
+  color: #777;
+}
+
+.starter-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3rem;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.price-card {
+  text-align: center;
+}
+
+.complete-card {
+  background-color: #fae5d3;
+  padding: 5rem 5rem;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+
+.complete-card::after {
+  position: absolute;
+  content: "Best value";
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding: 0.8rem 4rem;
+  background-color: #ffd43b;
+  color: #333;
+  top: 5%;
+  right: -10%;
+  transform: rotate(45deg);
+  font-weight: 600;
+}
+.starter-card {
+  border: 1px solid #fae5d3;
+  border-radius: 9px;
+  padding: 5rem 5rem;
+}
+
+.btn-price:link,
+.btn-price:visited {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.pirce-text {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/************************************************/
+/* FEATURE SECTION */
+/************************************************/
+.section-feature {
+  padding: 9.6rem 0;
+}
+
+.feature-icon {
+  color: #e67e22;
+  background-color: #fae5d3;
+  border-radius: 50%;
+  padding: 1.5rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  margin-bottom: 2.5rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.feature-text {
+  font-size: 1.5rem;
+  color: #666;
+  line-height: 1.3;
+}
+/************************************************/
+/* CTA SECTION */
+/************************************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #cf711f;
+
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 125, 34, 0.299)
+    ),
+    url(img/eating.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cta-text-box .heading-secondary {
+  color: #45260a;
+  padding: 7rem 3rem 5rem 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  padding: 0rem 5rem 2rem 7rem;
+  line-height: 1.5;
+  color: #45260a;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  display: block;
+  color: #45260a;
+}
+
+.cta-form input,
+.cta-form select {
+  padding: 1.2rem;
+  border: none;
+  border-radius: 9px;
+  font-size: 1.8rem;
+  width: 100%;
+  font-family: inherit;
+  background-color: #fae5d3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.btn--form {
+  align-self: end;
+  background-color: #45260a;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fae5d3;
+  text-decoration: none;
+  font-size: 2rem;
+  display: inline;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn--form:hover {
+  background-color: #fae5d3;
+  color: #45260a;
+}
+
+/************************************************/
+/* FOOTER SECTION */
+/************************************************/
+.section-footer {
+  padding: 9.6rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+.contacts {
+  font-size: 1.5rem;
+}
+
+.contacts p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.footer-link {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  color: #777;
+}
+
+.footer-copyright {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #767676;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2.4rem;
+  list-style: none;
+  margin-bottom: 5rem;
+}
+
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  color: #555;
+}
+
+.footer--omnifood-logo {
+  margin-bottom: 3rem;
+}
+
+/************************************************/
+/* MENU BUTTON FOR MOBILE NAVIGATION */
+/************************************************/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
